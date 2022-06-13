@@ -2,26 +2,27 @@
 import React from "react";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import { TailSpin } from "react-loader-spinner";
-
+import Weather from "./Weather";
 import "./App.css";
 import axios from "axios";
 
 export default function App(props) {
-  function handleResponse(response) {
-    alert(
-      `The weather in ${response.data.name} is ${Math.round(
-        response.data.main.temp
-      )} degrees`
-    );
-  }
-  let apiKey = "6c9652fb4aafdb6667f90afa73f1d29b";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.city}&appid=${apiKey}&units=metric`;
-
-  axios.get(apiUrl).then(handleResponse);
-  return <TailSpin height="100" width="100" color="grey" ariaLabel="loading" />;
-  
+  return (
+    <div className="App">
+      <div className="container">
+        <Weather />
+        <footer>
+          This project is {""}
+          <a href="https://github.com/Almajs/react-weather-app" target="blank">
+            open-sourced on GitHub
+          </a>{" "}
+          {""}
+          and was coded by Alma Zamir
+        </footer>
+      </div>
+    </div>
+  );
 }
-
 // <div className="App">
 //   <h1> Weather App</h1>
 //   <footer>
@@ -34,3 +35,18 @@ export default function App(props) {
 //   </footer>
 // </div>
 // );
+// function handleResponse(response) {
+//   alert(
+//     `The weather in ${response.data.name} is ${Math.round(
+//       response.data.main.temp
+//     )} degrees`
+//   );
+// }
+// let apiKey = "6c9652fb4aafdb6667f90afa73f1d29b";
+// let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.city}&appid=${apiKey}&units=metric`;
+
+// axios.get(apiUrl).then(handleResponse);
+
+// return <TailSpin height="100" width="100" color="grey" ariaLabel="loading" />;
+
+// }
