@@ -17,7 +17,7 @@ export default function App() {
           </a>{" "}
           {""}
           and hosted on{" "}
-          <a href="Netlify.com" target="blank">
+          <a href="https://github.com/Almajs/react-weather-app" target="blank">
             Netlify
           </a>
         </footer>
