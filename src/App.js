@@ -1,6 +1,5 @@
 // import logo from "./logo.svg";
 import React from "react";
-import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 
 import Weather from "./Weather";
 import "./App.css";
@@ -17,7 +16,10 @@ export default function App() {
           </a>{" "}
           {""}
           and hosted on{" "}
-          <a href="https://github.com/Almajs/react-weather-app" target="blank">
+          <a
+            href="https://62aa02cc651ff14a0d007ab6--bright-biscuit-cf8e99.netlify.app/"
+            target="blank"
+          >
             Netlify
           </a>
         </footer>
