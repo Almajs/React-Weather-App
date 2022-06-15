@@ -11,12 +11,15 @@ export default function App() {
       <div className="container">
         <Weather defaultCity="New York" />
         <footer>
-          This project is {""}
+          This project was coded by Alma Zamir and is {""}
           <a href="https://github.com/Almajs/react-weather-app" target="blank">
             open-sourced on GitHub
           </a>{" "}
           {""}
-          and was coded by Alma Zamir
+          and hosted on{" "}
+          <a href="Netlify.com" target="blank">
+            Netlify
+          </a>
         </footer>
       </div>
     </div>
