@@ -48,3 +48,9 @@
   line-height: 1;
   top: -34px;
 }
+
+@media (min-width: 800px) {
+  .weather .unit {
+    color: red;
+  }
+}
