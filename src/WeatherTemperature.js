@@ -20,6 +20,7 @@ export default function WeatherTemperature(props) {
           <a href="/" onClick={showFahrenheit}>
             °F
           </a>
+          {""}
         </span>
       </div>
     );
