@@ -27,16 +27,17 @@ export default function WeatherForecast(props) {
                   <WeatherForecastDay data={dailyForecast} />
                 </div>
               );
+            } else {
+              return null;
             }
           })}
-          ;
         </div>
       </div>
     );
   } else {
     let apiKey = process.env.REACT_APP_TOKEN_OWM;
-    let latitude = props.coordinates.lon;
-    let longitude = props.coordinates.lat;
+    let latitude = props.coordinates.lat;
+    let longitude = props.coordinates.lon;
     let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
 
     axios.get(apiUrl).then(handleResponse);
