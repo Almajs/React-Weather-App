@@ -9,8 +9,8 @@
 
 .Weather h1 {
   font-size: 22px;
-  font-weight: 100;
-  margin: 20px 0 0 0;
+  font-weight: 200;
+  margin: 30px 0 0 0;
   line-height: 29px;
 }
 
@@ -20,29 +20,31 @@
 }
 
 .Weather li {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 100;
-  height: 19px;
+  opacity: 0.6;
+  height: 22px;
   list-style: none;
 }
 
 .Weather canvas {
-  margin-top: 10px;
+  margin-top: 20px;
   margin-right: 10px;
+  margin-bottom: 20px;
   display: inline-block;
 }
 
 .Weather .temperature {
   font-weight: bold;
   color: rgb(33, 33, 33);
-  font-size: 64px;
-  line-height: 64px;
+  font-size: 60px;
+  line-height: 60px;
   font-weight: 400;
 }
 
 .Weather .unit {
   color: rgb(33, 33, 33);
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   position: relative;
   line-height: 1;
