@@ -17,7 +17,7 @@ export default function App() {
           {""}
           and hosted on{" "}
           <a
-            href="https://62aa02cc651ff14a0d007ab6--bright-biscuit-cf8e99.netlify.app/"
+            href="https://master--bright-biscuit-cf8e99.netlify.app/"
             target="blank"
           >
             Netlify
